@@ -2,11 +2,23 @@
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "DM Sans", sans-serif;
 $third-font: "Montserrat", sans-serif;
-$primary-color: #ccc;
-$secondary-color: #fff;
-$third-color: #fff;
-$text-light: #fff;
-$text-dark: #000;
-$gray-dark: #000;
-$gray-medium: #000;
-$gray-light: #000;
+// $primary-color: #22252d;
+// $secondary-color: #1adab6;
+// $third-color: #eb6666;
+// $text-light: #fff;
+// $text-dark: #000;
+// $gray-dark: #7b7d83;
+// $gray-medium: #292d36;
+// $gray-light: #272b33;
+
+:root {
+    --primarycolor: #22252d;
+    --secondarycolor: #1adab6;
+    --thirdcolor: #eb6666;
+    --textlight: #fff;
+    --textdark: #30333b;
+    --graydark: #7b7d83;
+    --graymedium: #292d36;
+    --graylight: #272b33;
+    --headerbackground: #eb66661e;
+}

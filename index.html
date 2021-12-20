@@ -14,9 +14,54 @@
 </head>
 
 <body>
-    <header></header>
-    <section></section>
-    <footer></footer>
+    <div id="root">
+        <div class="header">
+            <div class="header__copy">Copyright @ 2021 <a href="https://facebook.com/haidanghahaha"> Hai Dang</a></div>
+            <div class="header__mode">
+                <button id="light">
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </button>
+                <button id="dark">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+        <div class="screen">
+            <div id="calculation-history" class="screen__calculation__history">
+                <div class="number">9</div>
+                <div class="symbol red">*</div>
+                <div class="number">9</div>
+                <div class="symbol red">*</div>
+                <div class="number">9</div>
+            </div>
+            <div id="calculation-result" class="screen__calculation__result">81,123,123</div>
+        </div>
+        <div class="keyboard">
+            <button class="button blue">AC</button>
+            <button class="button blue">C</button>
+            <button class="button blue">%</button>
+            <button class="button red">÷</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button red">*</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button red">−</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button red">+</button>
+            <button class="button">
+                <ion-icon name="refresh-outline"></ion-icon>
+            </button>
+            <button class="button">0</button>
+            <button class="button">,</button>
+            <button class="button red">=</button>
+        </div>
+    </div>
     <script src="./assets/script/app.js"></script>
 </body>
 

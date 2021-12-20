@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primarycolor: #22252d;
+  --secondarycolor: #1adab6;
+  --thirdcolor: #eb6666;
+  --textlight: #fff;
+  --textdark: #30333b;
+  --graydark: #7b7d83;
+  --graymedium: #292d36;
+  --graylight: #272b33;
+  --headerbackground: #eb66661e; }
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth; }
@@ -148,5 +159,133 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--textlight); }
+
+#root {
+  width: 375px;
+  height: 815px;
+  border-radius: 25px;
+  background-color: var(--primarycolor);
+  display: flex;
+  flex-direction: column; }
+  #root .screen {
+    flex-grow: 1;
+    padding: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    color: var(--textlight); }
+    #root .screen__calculation__history {
+      user-select: none;
+      font-size: 24px;
+      margin-bottom: 10px;
+      display: flex;
+      font-weight: 600;
+      max-width: 100%;
+      overflow: hidden;
+      overflow-x: scroll;
+      padding-bottom: 10px; }
+      #root .screen__calculation__history::-webkit-scrollbar-track {
+        background-color: var(--primarycolor); }
+      #root .screen__calculation__history::-webkit-scrollbar {
+        height: 5px;
+        background-color: var(--graymedium); }
+      #root .screen__calculation__history::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--graymedium); }
+      #root .screen__calculation__history .number {
+        margin: 0 10px;
+        color: var(--graydark); }
+      #root .screen__calculation__history .red {
+        color: var(--thirdcolor); }
+    #root .screen__calculation__result {
+      user-select: none;
+      font-size: 46px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      max-width: 100%;
+      overflow: hidden;
+      overflow-x: scroll;
+      padding-bottom: 10px; }
+      #root .screen__calculation__result::-webkit-scrollbar-track {
+        background-color: var(--primarycolor); }
+      #root .screen__calculation__result::-webkit-scrollbar {
+        height: 5px;
+        background-color: var(--graymedium); }
+      #root .screen__calculation__result::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--graymedium); }
+  #root .keyboard {
+    background-color: var(--graymedium);
+    border-radius: 25px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; }
+    #root .keyboard .button {
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      width: 60px;
+      height: 60px;
+      background-color: var(--graylight);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--textlight);
+      transition: all 0.2s ease; }
+      #root .keyboard .button:hover {
+        background-color: var(--textdark); }
+      #root .keyboard .button ion-icon {
+        font-size: 24px; }
+    #root .keyboard .red {
+      color: var(--thirdcolor); }
+    #root .keyboard .blue {
+      color: var(--secondarycolor); }
+  #root .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 25px;
+    margin-top: 15px; }
+    #root .header__copy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--thirdcolor);
+      font-size: 12px;
+      font-weight: 600;
+      background-color: var(--headerbackground);
+      padding: 7px 25px;
+      border-radius: 8px; }
+      #root .header__copy a {
+        color: var(--thirdcolor);
+        margin-left: 10px;
+        font-size: 14px; }
+    #root .header__mode {
+      margin-top: 10px;
+      background-color: var(--graymedium);
+      width: 115px;
+      border-radius: 16px;
+      overflow: hidden; }
+      #root .header__mode button {
+        background-color: var(--graymedium);
+        outline: none;
+        border: none;
+        width: 55px;
+        height: 45px;
+        color: var(--graydark); }
+        #root .header__mode button ion-icon {
+          font-size: 24px; }
 
 /*# sourceMappingURL=app.css.map */
