@@ -205,8 +205,9 @@ html {
         border-radius: 10px;
         background-color: var(--graymedium); }
       #root .screen__calculation__history .number {
-        margin: 0 10px;
         color: var(--graydark); }
+      #root .screen__calculation__history .calculation {
+        margin: 0 10px; }
       #root .screen__calculation__history .red {
         color: var(--thirdcolor); }
     #root .screen__calculation__result {

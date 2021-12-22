@@ -34,6 +34,7 @@ html {
             overflow: hidden;
             overflow-x: scroll;
             padding-bottom: 10px;
+
             &::-webkit-scrollbar-track {
                 background-color: var(--primarycolor);
             }
@@ -49,8 +50,10 @@ html {
                 background-color: var(--graymedium);
             }
             .number {
-                margin: 0 10px;
                 color: var(--graydark);
+            }
+            .calculation {
+                margin: 0 10px;
             }
             .red {
                 color: var(--thirdcolor);
