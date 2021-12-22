@@ -244,7 +244,8 @@ html {
       font-size: 20px;
       font-weight: 600;
       color: var(--textlight);
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent; }
       #root .keyboard .button:hover {
         background-color: var(--textdark); }
       #root .keyboard .button ion-icon {

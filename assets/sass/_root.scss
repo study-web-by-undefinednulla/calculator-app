@@ -102,6 +102,7 @@ html {
             font-weight: 600;
             color: var(--textlight);
             transition: all 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
             &:hover {
                 background-color: var(--textdark);
             }
