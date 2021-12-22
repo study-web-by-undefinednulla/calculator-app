@@ -16,7 +16,6 @@ const app = {
         })
     },
     handle: function () {
-        // khai bao button
         const buttons = document.getElementsByClassName('button')
         let calculationArray = [],
             resultText = [],

@@ -158,3 +158,30 @@ html {
         }
     }
 }
+@include maxW(375px) {
+    #root {
+        width: 100vw;
+        height: 100vh;
+        // background-color: var(--graydark);
+        border-radius: 0;
+        .keyboard {
+            justify-content: space-between;
+            justify-items: center;
+            grid-gap: 10px 0px;
+            padding: 20px;
+            // display: none;
+            border-radius: 25px 25px 0 0;
+            .button {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        .screen {
+            padding: 10px 25px;
+            // display: none;
+        }
+        .header {
+            // display: none;
+        }
+    }
+}

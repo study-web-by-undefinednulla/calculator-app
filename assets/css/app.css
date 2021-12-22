@@ -289,4 +289,21 @@ html {
         #root .header__mode button ion-icon {
           font-size: 24px; }
 
+@media screen and (max-width: 375px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0; }
+    #root .keyboard {
+      justify-content: space-between;
+      justify-items: center;
+      grid-gap: 10px 0px;
+      padding: 20px;
+      border-radius: 25px 25px 0 0; }
+      #root .keyboard .button {
+        width: 55px;
+        height: 55px; }
+    #root .screen {
+      padding: 10px 25px; } }
+
 /*# sourceMappingURL=app.css.map */
