@@ -185,7 +185,17 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    color: var(--textlight); }
+    color: var(--textlight);
+    position: relative; }
+    #root .screen::after {
+      content: "";
+      width: 50px;
+      height: 100%;
+      background-image: linear-gradient(to right, var(--primarycolor), #272b3300);
+      position: absolute;
+      left: 25px;
+      top: 0;
+      z-index: 1; }
     #root .screen__calculation__history {
       user-select: none;
       font-size: 24px;
@@ -200,10 +210,10 @@ html {
         background-color: var(--primarycolor); }
       #root .screen__calculation__history::-webkit-scrollbar {
         height: 5px;
-        background-color: var(--graymedium); }
+        background-color: var(--primarycolor); }
       #root .screen__calculation__history::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background-color: var(--graymedium); }
+        background-color: var(--primarycolor); }
       #root .screen__calculation__history .number {
         color: var(--graydark); }
       #root .screen__calculation__history .calculation {
@@ -217,8 +227,7 @@ html {
       letter-spacing: 3px;
       max-width: 100%;
       overflow: hidden;
-      overflow-x: scroll;
-      padding-bottom: 10px; }
+      overflow-x: scroll; }
       #root .screen__calculation__result::-webkit-scrollbar-track {
         background-color: var(--primarycolor); }
       #root .screen__calculation__result::-webkit-scrollbar {
@@ -226,7 +235,7 @@ html {
         background-color: var(--graymedium); }
       #root .screen__calculation__result::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background-color: var(--graymedium); }
+        background-color: var(--primarycolor); }
   #root .keyboard {
     background-color: var(--graymedium);
     border-radius: 25px;

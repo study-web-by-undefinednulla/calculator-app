@@ -24,6 +24,29 @@ html {
         align-items: flex-end;
         flex-direction: column;
         color: var(--textlight);
+        position: relative;
+        &::after {
+            content: "";
+            width: 50px;
+            height: 100%;
+            // background-color: #fff;
+            background-image: linear-gradient(to right, var(--primarycolor), #272b3300);
+            position: absolute;
+            left: 25px;
+            top: 0;
+            z-index: 1;
+        }
+        // &::before {
+        //     content: "";
+        //     width: 50px;
+        //     height: 100%;
+        //     // background-color: #fff;
+        //     background-image: linear-gradient(to left, var(--primarycolor), #272b3300);
+        //     position: absolute;
+        //     right: 25px;
+        //     top: 0;
+        //     z-index: 1;
+        // }
         &__calculation__history {
             user-select: none;
             font-size: 24px;
@@ -42,12 +65,12 @@ html {
             &::-webkit-scrollbar {
                 // width: 5px;
                 height: 5px;
-                background-color: var(--graymedium);
+                background-color: var(--primarycolor);
             }
 
             &::-webkit-scrollbar-thumb {
                 border-radius: 10px;
-                background-color: var(--graymedium);
+                background-color: var(--primarycolor);
             }
             .number {
                 color: var(--graydark);
@@ -67,11 +90,11 @@ html {
             max-width: 100%;
             overflow: hidden;
             overflow-x: scroll;
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
+
             &::-webkit-scrollbar-track {
                 background-color: var(--primarycolor);
             }
-
             &::-webkit-scrollbar {
                 // width: 5px;
                 height: 5px;
@@ -80,7 +103,7 @@ html {
 
             &::-webkit-scrollbar-thumb {
                 border-radius: 10px;
-                background-color: var(--graymedium);
+                background-color: var(--primarycolor);
             }
         }
     }
